@@ -4,6 +4,16 @@ Code for thesis "Combining Deep Supervised Learning and Reinforcement Learning f
 
 In this work, we present a symbolic music melody generation method that combines supervised learning and reinforcement learning. For using deep learning in symbolic music modeling tasks, music clips can be processed as sequences of symbols along time, so sequence models with the temporal information modeling ability usually be used, just like other sequential modeling tasks, such as text modeling or natural language processing. In these kind of supervised approaches, deep neural network is able to capture the musical features from the existing dataset automatically. However, music compositions by human composers usually have some well-defined structures and conventional rules of music theory that please the audience. These constraints can be enforced into neural network using reinforcement learning which cannot achieve using supervised learning techniques only. By combining these two major training architectures in deep learning, we can make the model mimic the style of the existing dataset and also control specific behaviors of the generated melody. We also investigate the design of input representation and architecture to make the model capture the music structure feature easier. In the experiments, we focus on monophonic melody generation of Chinese Jiangnan style music, and validate the quality and some characteristics of the generated result, as well as the effectiveness of different modules in the architecture.
 
+### Architecture Overall
+
+![Architecture](architecture.png)
+
+### Demo
+
+A 8-bars generated example.
+
+![Demo](demo.png)
+
 ### References
 
 [1]	John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, Oleg Klimov. “Proximal Policy Optimization Algorithms”. arXiv:1707.06347, 2017.
